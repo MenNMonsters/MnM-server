@@ -14,6 +14,9 @@ app.get('/', (req, res) => {
 	res.send('yep')
 })
 
+app.get('/georgeTest', (req, res) =>{
+	res.send('{"testKey":"testValue"}')})
+
 app.server.listen(process.env.PORT || config.port, () => {
 	console.log(`Started on port ${app.server.address().port}`)
 })
