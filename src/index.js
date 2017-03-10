@@ -10,8 +10,6 @@ app.server = http.createServer(app)
 // debug logger
 app.use(morgan('dev'))
 
-app.use(bodyParser)
-
 app.get('/', (req, res) => {
 	res.send('yep')
 })
